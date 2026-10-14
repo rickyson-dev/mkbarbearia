@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Painel do barbeiro | MK Barbearia</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/fila.css">
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Principal">
+  <a class="brand" href="index.html" aria-label="MK Barbearia — início">
+    <img src="images/logo.png" alt="Logo MK Barbearia" width="40" height="40" style="border-radius:50%;object-fit:contain;background:#000">
+    <span>MK BARBEARIA</span></a>
+  
+  <div class="links" style="display:flex"><a href="index.html">← Voltar ao site</a></div></nav></div></header>
+<main class="pn"><div class="wrap">
+  <div id="pnLogin" class="fila-box pn-login">
+    <h1>Área do barbeiro</h1>
+    <form id="pnForm">
+      <label for="pnSenha">Senha</label>
+      <input id="pnSenha" type="password" autocomplete="current-password" required>
+      <button class="btn solid" type="submit">Entrar</button>
+      <p id="pnMsg" class="fila-msg" role="status"></p>
+    </form>
+  </div>
+  <div id="pnApp" hidden>
+    <div class="pn-top"><h1>Fila de hoje</h1><span id="pnHoje" class="pn-hoje"></span><button id="pnSair" class="btn ghost" type="button">Sair</button></div>
+    <button id="pnChamar" class="btn solid pn-chamar" type="button">Chamar próximo</button>
+    <div id="pnAtual" class="fila-box pn-atual"></div>
+    <h2 class="pn-h">Aguardando</h2>
+    <ol id="pnLista" class="pn-lista"></ol>
+    <p id="pnVazia" class="fila-vazia" hidden>Ninguém esperando.</p>
+    <form id="pnAdd" class="pn-add"><input id="pnNome" type="text" maxlength="30" placeholder="Adicionar cliente (presencial)" aria-label="Nome do cliente"><button class="btn ghost" type="submit">Adicionar</button></form>
+    <p id="pnErro" class="fila-msg" role="alert"></p>
+  </div>
+</div></main>
+<script src="js/painel.js" defer></script>
+</body>
+</html>

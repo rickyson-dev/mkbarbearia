@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MK Barbearia | Barbearia em Porto Nacional — TO</title>
+<meta name="description" content="MK Barbearia em Porto Nacional, Tocantins: corte masculino, degradê, barba na régua e acabamento. Agende pelo WhatsApp.">
+<meta name="keywords" content="barbearia em Porto Nacional, corte masculino em Porto Nacional, MK Barbearia, degradê, barba">
+<meta property="og:title" content="MK Barbearia — Seu estilo, nossa assinatura.">
+<meta property="og:description" content="Corte e barba na régua em Porto Nacional — TO. Agende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarberShop","name":"MK Barbearia","telephone":"+55 63 99116-4898","address":{"@type":"PostalAddress","addressLocality":"Porto Nacional","addressRegion":"TO","addressCountry":"BR","streetAddress":"Jardim Brasília"},"sameAs":["https://www.instagram.com/mk_barbearia_01/"]}</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/fila.css">
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Principal">
+  <a class="brand" href="#inicio" aria-label="MK Barbearia — início">
+    <img src="images/logo.png" alt="Logo MK Barbearia" width="40" height="40" style="border-radius:50%;object-fit:contain;background:#000">
+    <span>MK BARBEARIA</span></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div class="links" id="links">
+    <a href="#servicos">Serviços</a><a href="#fila">Fila</a><a href="#sobre">Sobre</a><a href="#onde">Onde estamos</a><a href="#instagram">Instagram</a>
+    <a class="btn solid wa-link" href="#" style="color:#050505;padding:.5rem 1.1rem;min-height:40px">Agendar</a>
+  </div></nav></div></header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <p class="mono">Porto Nacional — TO</p>
+      <h1>MK BARBEARIA</h1>
+      <p class="tag">Seu estilo, nossa assinatura.</p>
+      <p class="sub">Corte e barba na régua. Qualidade, precisão e atitude em cada detalhe.</p>
+      <div class="cta">
+        <a class="btn solid wa-link" href="#">Agendar meu horário</a>
+        <a class="btn ghost" href="#servicos">Conhecer nossos serviços</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll" aria-hidden="true"></div>
+</section>
+
+<section class="sv" id="servicos"><div class="wrap">
+  <div class="ruler" aria-hidden="true"></div>
+  <h2>Serviços</h2>
+  <p class="lead">Do corte clássico ao degradê, cada atendimento é feito com atenção aos detalhes.</p>
+  <div class="grid" id="svGrid"></div>
+</div></section>
+
+<section id="fila"><div class="wrap">
+  <div class="ruler" aria-hidden="true"></div>
+  <h2>Fila de atendimento</h2>
+  <p class="lead">Entre na fila e acompanhe a sua vez em tempo real. Para garantir um horário, chame no WhatsApp.</p>
+  <div class="fila-grid">
+    <div class="fila-box">
+      <div id="filaMinha" class="fila-minha" hidden aria-live="polite"></div>
+      <form id="filaForm" novalidate>
+        <label for="filaNome">Seu nome</label>
+        <input id="filaNome" name="nome" type="text" maxlength="30" autocomplete="given-name" placeholder="Nome e sobrenome" required>
+        <input type="text" name="site" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+        <button class="btn solid" type="submit">Entrar na fila</button>
+        <p id="filaMsg" class="fila-msg" role="status"></p>
+      </form>
+    </div>
+    <div class="fila-box">
+      <p class="fila-now">Em atendimento: <b id="filaAtual">—</b></p>
+      <ol id="filaLista" class="fila-lista" aria-live="polite"></ol>
+      <p id="filaVazia" class="fila-vazia" hidden>Ninguém na fila agora. Seja o primeiro!</p>
+      <p id="filaStatus" class="fila-status">Carregando…</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="about" id="sobre"><div class="wrap">
+  <div>
+    <div class="ruler" aria-hidden="true"></div>
+    <h2>Mais que um corte. Uma experiência.</h2>
+    <p class="lead">A MK Barbearia é o lugar certo para quem valoriza estilo, personalidade e um corte bem executado. Nosso compromisso é oferecer um atendimento de qualidade, atenção aos detalhes e aquele visual alinhado que faz a diferença.</p>
+    <div class="cta"><a class="btn solid wa-link" href="#">Agendar meu horário</a></div>
+  </div>
+</div></section>
+
+<section id="onde"><div class="wrap">
+  <div class="ruler" aria-hidden="true"></div>
+  <h2>Onde estamos</h2>
+  <ul class="info">
+    <li><b>Barbearia</b><span>MK Barbearia</span></li>
+    <li><b>Cidade</b><span>Porto Nacional — TO</span></li>
+    <li><b>Bairro</b><span>Jardim Brasília</span></li>
+    <li><b>Referência</b><span>Próximo ao Supermercado São Francisco</span></li>
+    <li><b>Atendimento</b><span>Segunda-feira a sábado</span></li>
+    <li><b>Horários</b><span class="todo" id="horarios">Consulte pelo WhatsApp</span></li>
+    <li><b>WhatsApp</b><a href="tel:+5563991164898">(63) 99116-4898</a></li>
+  </ul>
+  <div class="cta">
+    <a class="btn solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=MK+Barbearia+Jardim+Bras%C3%ADlia+Porto+Nacional+TO">Como chegar</a>
+    <a class="btn ghost wa-link" href="#">Agendar meu horário</a>
+  </div>
+</div></section>
+
+<section class="ig center" id="instagram"><div class="wrap">
+  <h2>Siga a MK no Instagram</h2>
+  <p class="handle">@mk_barbearia_01</p>
+  <p class="lead">Acompanhe nossos cortes, novidades e resultados.</p>
+  <div class="cta" style="justify-content:center"><a class="btn solid" target="_blank" rel="noopener" href="https://www.instagram.com/mk_barbearia_01/">Seguir no Instagram</a></div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><a class="brand" href="#inicio"><img src="images/logo.png" alt="Logo MK Barbearia" width="40" height="40" style="border-radius:50%;object-fit:contain;background:#000"><span style="color:var(--txt)">MK BARBEARIA</span></a>
+      <p style="margin-top:.8rem">Seu estilo, nossa assinatura.</p></div>
+    <div><h4>Contato</h4><ul><li>Jardim Brasília, Porto Nacional — TO</li><li><a href="tel:+5563991164898">WhatsApp: (63) 99116-4898</a></li><li><a target="_blank" rel="noopener" href="https://www.instagram.com/mk_barbearia_01/">Instagram: @mk_barbearia_01</a></li><li>Segunda a sábado</li><li><a href="painel.html">Área do barbeiro</a></li></ul></div>
+    <div><h4>Navegação</h4><ul><li><a href="#servicos">Serviços</a></li><li><a href="#fila">Fila de atendimento</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#onde">Onde estamos</a></li></ul></div>
+  </div>
+  <p class="copy">© <span id="ano"></span> MK Barbearia. Todos os direitos reservados.</p>
+</div></footer>
+
+<a class="wa wa-link" href="#" aria-label="Agendar pelo WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.4.7 4.7 1.9 6.6L3.2 29l7.1-2.1a12.6 12.6 0 0 0 5.7 1.4C23 28.3 28.600 22.700 28.600 15.800 28.600 8.800 23 3 16 3Zm0 22.900c-1.800 0-3.500-.5-5-1.400l-.4-.2-4.200 1.200 1.300-4.100-.3-.4a10 10 0 0 1-1.600-5.500C5.800 10 10.400 5.500 16 5.500s10.200 4.500 10.200 10.200S21.600 25.900 16 25.900Zm5.600-7.500c-.3-.2-1.800-.9-2.100-1-.3-.1-.5-.2-.7.200-.2.300-.8 1-1 1.200-.2.200-.4.200-.7.100-.3-.2-1.300-.5-2.500-1.500-.9-.8-1.500-1.800-1.700-2.100-.2-.3 0-.5.100-.6l.5-.6c.2-.2.200-.3.300-.5.100-.2.100-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.300 4.700 2 .8 2.700.9 3.700.7.600-.1 1.800-.7 2-1.400.3-.7.300-1.300.2-1.400-.1-.2-.3-.3-.6-.4Z"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+<script src="js/fila.js" defer></script>
+</body>
+</html>
